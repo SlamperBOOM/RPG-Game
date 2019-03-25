@@ -7,3 +7,4 @@ H:\RPG Game\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsF
 H:\RPG Game\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csproj.GenerateResource.Cache
 H:\RPG Game\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
 H:\RPG Game\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
+H:\RPG Game\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Form3.resources

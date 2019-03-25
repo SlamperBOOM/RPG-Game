@@ -8,7 +8,7 @@ namespace WindowsFormsApplication1
     public class Char
     {
         public int power; //собственная сила 
-        public int defend; //броня 
+        public int armor; //броня 
         public int HP; //очки здоровья
         public int MP; //кол-во маны
         public int level; //уровень
@@ -20,12 +20,14 @@ namespace WindowsFormsApplication1
         public Inventory invent; //инвентарь
         public int[] coords = new int[2]; //местоположение
         public string name; //имя персонажа
+        public int deathexp; //опыт при смерти
+        //14(15) параметров
 
         public Char(int p, int d, int H, int M, int l, int e, int I,
-            int a, int s, int m, Inventory i, int[] c, string n)
+            int a, int s, int m, Inventory i, int[] c, string n, int de)
         {
             power = p;
-            defend = d;
+            armor = d;
             HP = H;
             MP = M;
             level = l;
@@ -37,6 +39,7 @@ namespace WindowsFormsApplication1
             invent = i;
             coords = c;
             name = n;
+            deathexp = de;
         }
     }
 }

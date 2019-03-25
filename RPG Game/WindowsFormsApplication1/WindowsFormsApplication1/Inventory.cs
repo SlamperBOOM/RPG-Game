@@ -9,5 +9,6 @@ namespace WindowsFormsApplication1
     {
         int weigth; //вместимость
         List<Item> storage = new List<Item>();
+        public Inventory(int i) {weigth=i;}
     }
 }

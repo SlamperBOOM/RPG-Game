@@ -36,6 +36,9 @@
             this.btstart1 = new System.Windows.Forms.Button();
             this.lbname = new System.Windows.Forms.Label();
             this.btback = new System.Windows.Forms.Button();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.btstart2 = new System.Windows.Forms.Button();
+            this.tbname1 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // lbMain
@@ -67,6 +70,7 @@
             this.btload.TabIndex = 2;
             this.btload.Text = "Загрузить игру";
             this.btload.UseVisualStyleBackColor = true;
+            this.btload.Click += new System.EventHandler(this.btload_Click);
             // 
             // btexit
             // 
@@ -99,18 +103,18 @@
             // 
             // lbname
             // 
-            this.lbname.AutoSize = true;
-            this.lbname.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lbname.Location = new System.Drawing.Point(45, 89);
+            this.lbname.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lbname.Location = new System.Drawing.Point(12, 88);
             this.lbname.Name = "lbname";
-            this.lbname.Size = new System.Drawing.Size(198, 18);
+            this.lbname.Size = new System.Drawing.Size(257, 28);
             this.lbname.TabIndex = 6;
             this.lbname.Text = "Введите имя персонажа";
+            this.lbname.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lbname.Visible = false;
             // 
             // btback
             // 
-            this.btback.Location = new System.Drawing.Point(83, 178);
+            this.btback.Location = new System.Drawing.Point(83, 177);
             this.btback.Name = "btback";
             this.btback.Size = new System.Drawing.Size(118, 23);
             this.btback.TabIndex = 7;
@@ -119,11 +123,36 @@
             this.btback.Visible = false;
             this.btback.Click += new System.EventHandler(this.btback_Click);
             // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            // 
+            // btstart2
+            // 
+            this.btstart2.Location = new System.Drawing.Point(83, 148);
+            this.btstart2.Name = "btstart2";
+            this.btstart2.Size = new System.Drawing.Size(118, 23);
+            this.btstart2.TabIndex = 8;
+            this.btstart2.Text = "Начать игру";
+            this.btstart2.UseVisualStyleBackColor = true;
+            this.btstart2.Visible = false;
+            this.btstart2.Click += new System.EventHandler(this.btstart2_Click);
+            // 
+            // tbname1
+            // 
+            this.tbname1.Location = new System.Drawing.Point(83, 121);
+            this.tbname1.Name = "tbname1";
+            this.tbname1.Size = new System.Drawing.Size(118, 20);
+            this.tbname1.TabIndex = 9;
+            this.tbname1.Visible = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(281, 349);
+            this.Controls.Add(this.tbname1);
+            this.Controls.Add(this.btstart2);
             this.Controls.Add(this.btback);
             this.Controls.Add(this.lbname);
             this.Controls.Add(this.btstart1);
@@ -150,6 +179,9 @@
         private System.Windows.Forms.Button btstart1;
         private System.Windows.Forms.Label lbname;
         private System.Windows.Forms.Button btback;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.Button btstart2;
+        private System.Windows.Forms.TextBox tbname1;
 
     }
 }
